@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="pychen1998的博客">
 <meta property="og:description" content="变量1、变量的声明：在python没有变量类型，直接进行变量的声明，比如：i=10。2、变量的赋值：在python中，有两种赋值方式（1）单个变量赋值：name=’tom’（2）多个变量同时赋值：name,age,sex=’tom’,23,’男’3、变量在内存中的存在情况（1）python中的变量，在声明和赋值时，不仅声明了变量的名字同时还为这个变量指向了内存中的地址，该地址用来存储变量的值。（2">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-19T14:00:44.454Z">
+<meta property="og:updated_time" content="2018-07-20T02:39:46.726Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python数据类型">
 <meta name="twitter:description" content="变量1、变量的声明：在python没有变量类型，直接进行变量的声明，比如：i=10。2、变量的赋值：在python中，有两种赋值方式（1）单个变量赋值：name=’tom’（2）多个变量同时赋值：name,age,sex=’tom’,23,’男’3、变量在内存中的存在情况（1）python中的变量，在声明和赋值时，不仅声明了变量的名字同时还为这个变量指向了内存中的地址，该地址用来存储变量的值。（2">
@@ -183,7 +183,7 @@
       
         <h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><p>1、变量的声明：在python没有变量类型，直接进行变量的声明，比如：i=10。<br>2、变量的赋值：在python中，有两种赋值方式<br>（1）单个变量赋值：name=’tom’<br>（2）多个变量同时赋值：name,age,sex=’tom’,23,’男’<br>3、变量在内存中的存在情况<br>（1）python中的变量，在声明和赋值时，不仅声明了变量的名字同时还为这个变量指向了内存中的地址，该地址用来存储变量的值。<br>（2）python中整数、字符串、浮点数等其本身都属于常量，所以当赋值给一个变量时。如：i=10，意味着将“10”这个常量在内存中的地址指向“i”，因此，i=10，j=10，使用id(i)、id(j），我们发现他们的id是相同的。因为，他们的值10在内存中的地址是相同的。<br>4、变量与内存地址：当我们声明一个变量时，对其进行赋值。实际上就是将变量值所在的内存地址，赋值给该变量。也就是说这个变量指向其值所在的内存地址。当我们改变变量的值的时候，就是将变量指向的内存地址进行变化。<br>5、变量与常量<br>（1）变量：我们认为其内容是临时结果，可变的。供后续的程序代码进行调用。<br>（2）常量：我们认为其内容是不变的，或者在程序运行的过程中也不发生改变。<br>在python中，我们通过大写变量名，来表明这是一个常量，比如：CARDID=’12048377293’<br>6、变量命名规则<br>（1）python中的变量命名，必须由字母、数字或下划线三者组成，不能有其他的字符出现；<br>（2）变量名的首个字符，必须是字母或下划线；<br>（3）python中的关键字不能作为变量名来使用，常用的关键字诸如：if,for,is,none等等；<br>（4）python是严格区分大小写的语言，其中A=10，a=10，我们认为这是两个不同的变量。<br>例1：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; i=10</span><br><span class="line">&gt;&gt;&gt; j=10</span><br><span class="line">&gt;&gt;&gt; i==j</span><br><span class="line">True</span><br><span class="line">&gt;&gt;&gt; id(i)==id(j)</span><br><span class="line">True</span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure></p>
 <h2 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h2><p>常见的数据类型：整型、布尔型、浮点型、字符串型、复数型。</p>
-<h3 id="整型"><a href="#整型" class="headerlink" title="整型"></a>整型</h3><p>1、我们通常根据计算机中数据编码格式，将整型分为：二进制、八进制、十进制、十六进制四种类型。<br>2、进制间的转换<br>（）将十进制转为二进制：bin(int)；<br>（）将二进制转为十进制：int(bin)；<br>（）将十进制转为八进制：oct(int)；<br>（）将八进制转为十进制：int(oct)；<br>（）将十进制转为十六进制：hex(int)；<br>（）将十六进制转为十进制：int(hex)。</p>
+<h3 id="整型"><a href="#整型" class="headerlink" title="整型"></a>整型</h3><p>1、我们通常根据计算机中数据编码格式，将整型分为：二进制、八进制、十进制、十六进制四种类型。<br>2、进制间的转换<br>（1）将十进制转为二进制：bin(int)；<br>（2）将二进制转为十进制：int(bin)；<br>（3）将十进制转为八进制：oct(int)；<br>（4）将八进制转为十进制：int(oct)；<br>（5）将十进制转为十六进制：hex(int)；<br>（6）将十六进制转为十进制：int(hex)。</p>
 <h3 id="布尔型"><a href="#布尔型" class="headerlink" title="布尔型"></a>布尔型</h3><p>1、python中布尔型分为True和False两种，但是在实际操作中我们也可以将其与1和0等同。<br>2、布尔型常用在逻辑运算和判断条件中，作为结果来使用。但是也可以参与算术运算。当进行算术运算时，True作为1，False作为0参与运算。<br>3、布尔型的值<br>a=True<br>b=False<br>a+1 =&gt; 2<br>b+1 =&gt; 1<br>a+b =&gt; 1<br>注意：通常我们在python，不能将布尔型参与算术运算的。布尔型一般参加比较运算或逻辑运算，其返回值还是布尔型。<br>4、布尔型求非<br>a=True<br>b=False<br>not a =&gt; False<br>not b =&gt; True</p>
 <h3 id="浮点型"><a href="#浮点型" class="headerlink" title="浮点型"></a>浮点型</h3><p>在python中，我们通过阅读官方文档了解到，浮点数是一种近似值的表示，因此直接使用浮点数时常常出现精度丢失或不匹配情况。python中提出了decimal对象来进行解决，通过import decimal引入生成一个decimal对象，将浮点数转换为decimal类型，可以支持完成对应的算术运算。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">from decimal import Decimal</span><br><span class="line">f1=12.4556</span><br><span class="line">f2=24.3</span><br><span class="line">a=Decimal(f1).quantize(Decimal(<span class="string">'0.00'</span>))</span><br><span class="line">b=Decimal(f2).quantize(Decimal(<span class="string">'0.00'</span>))</span><br><span class="line"><span class="built_in">print</span>((a*b).quantize(Decimal(<span class="string">'0.00'</span>)))</span><br></pre></td></tr></table></figure></p>
 <p>先将f1的值进行四舍五入，然后在将f2的值进行四舍五入，最后将f1*f2的值进行四舍五入输出。’0.00’是得到的值保留小数点后两位。</p>
@@ -300,6 +300,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2018/07/23/class3/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Python控制语句
+        
+      </div>
+    </a>
   
   
     <a href="/2018/07/18/class1/" id="article-nav-older" class="article-nav-link-wrap">
